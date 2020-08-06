@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Jane Doe",
+    "role": "Manager",
+    "email": "jdoe@yahoo.com"
+  },
+  {
+    "id": 2,
+    "name": "John Doe",
+    "role": "Engineer",
+    "email": "johndoe@gmail.com"
+  },
+  {
+    "id": 3,
+    "name": "Karen Perkins",
+    "role": "Sales",
+    "email": "kp@yahoo.com"
+  },
+  {
+    "id": 4,
+    "name": "Hank Hill",
+    "role": "Sales",
+    "email": "hhill@hotmail.com"
+  },
+  {
+    "id": 5,
+    "name": "Frasier Crane",
+    "role": "Human Resources",
+    "email": "fcrane@gmail.com"
+  },
+  {
+    "id": 6,
+    "name": "Rachel Carson",
+    "role": "Analyst",
+    "email": "rcarson@yahoo.com"
+  },
+  {
+    "id": 7,
+    "name": "Peter Gibbons",
+    "role": "Sales",
+    "email": "pgibb@hotmail.com"
+  },
+  {
+    "id": 8,
+    "name": "Lisa Simpson",
+    "role": "Analyst",
+    "email": "lisasimpson@gmail.com"
+  }
+]
