@@ -2,12 +2,12 @@ import React, { Component } from "react";
 
 import Filter from "./Filter";
 import Table from "./Table/Table";
-import Users from "./Users.json";
+import Data from "./Data.json";
 
 export default class Wrapper extends Component {
   state = {
     filter: "",
-    data: Users,
+    data: Data,
   };
 
   handleFilterOption = (event) => {
@@ -17,10 +17,28 @@ export default class Wrapper extends Component {
     this.setState({ [filterItem]: value });
   };
 
+  handleFilterSubmit = (event) => {
+    event.preventDefault();
+    const filteredTable = Data.filter(
+      (employee) => employee.role === this.state.filter
+    );
+
+    this.setState({ data: filteredTable });
+  };
+
+  handleFilterReset = (event) => {
+    event.preventDefault();
+    this.setState({ data: Data });
+  };
+
   render() {
     return (
       <main>
-        <Filter handleFilterOption={this.handleFilterOption} />
+        <Filter
+          handleFilterOption={this.handleFilterOption}
+          handleFilterSubmit={this.handleFilterSubmit}
+          handleFilterReset={this.handleFilterReset}
+        />
         <Table data={this.state.data} />
       </main>
     );
