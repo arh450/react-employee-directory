@@ -13,7 +13,7 @@ export default function Filter(props) {
       <select
         className="custom-select"
         name="filter"
-        onChange={props.handleFilter}
+        onChange={props.handleFilterOption}
       >
         <option disabled selected>
           Select a role to filter by...

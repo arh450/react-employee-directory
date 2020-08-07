@@ -7,21 +7,21 @@ import Users from "./Users.json";
 export default class Wrapper extends Component {
   state = {
     filter: "",
-    results: Users,
+    data: Users,
   };
 
-  handleFilter = (event) => {
-    const filterOption = event.target.name;
+  handleFilterOption = (event) => {
+    const filterItem = event.target.name;
     const value = event.target.value;
 
-    this.setState({ [filterOption]: value });
+    this.setState({ [filterItem]: value });
   };
 
   render() {
     return (
       <main>
-        <Filter handleFilter={this.handleFilter} />
-        <Table />
+        <Filter handleFilterOption={this.handleFilterOption} />
+        <Table data={this.state.data} />
       </main>
     );
   }
