@@ -41,6 +41,16 @@ export default class Wrapper extends Component {
     this.setState({ data: sortLastNames });
   };
 
+  handleSortReset = (event) => {
+    event.preventDefault();
+
+    const sortID = this.state.data.sort((a, b) => {
+      return a.id - b.id;
+    });
+
+    this.setState({ data: sortID });
+  };
+
   render() {
     return (
       <main>
@@ -52,6 +62,7 @@ export default class Wrapper extends Component {
         <Table
           data={this.state.data}
           handleSortedNames={this.handleSortedNames}
+          handleSortReset={this.handleSortReset}
         />
       </main>
     );

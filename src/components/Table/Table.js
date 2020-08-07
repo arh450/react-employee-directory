@@ -7,7 +7,10 @@ export default function Table(props) {
   // console.log(props);
   return (
     <table className="table">
-      <TableHeaders handleSortedNames={props.handleSortedNames} />
+      <TableHeaders
+        handleSortedNames={props.handleSortedNames}
+        handleSortReset={props.handleSortReset}
+      />
       <TableBody data={props.data} />
     </table>
   );
