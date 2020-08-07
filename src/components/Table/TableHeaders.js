@@ -5,7 +5,8 @@ export default function TableHeaders() {
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Name</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
         <th scope="col">Role</th>
         <th scope="col">Email</th>
       </tr>

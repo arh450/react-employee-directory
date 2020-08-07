@@ -7,7 +7,8 @@ export default function TableBody(props) {
       {props.data.map((employee) => (
         <tr key={employee.id}>
           <td>{employee.id}</td>
-          <td>{employee.name}</td>
+          <td>{employee.firstName}</td>
+          <td>{employee.lastName}</td>
           <td>{employee.role}</td>
           <td>{employee.email}</td>
         </tr>

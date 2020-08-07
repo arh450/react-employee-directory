@@ -1,49 +1,57 @@
 [
   {
     "id": 1,
-    "name": "Jane Doe",
+    "firstName": "Jane",
+    "lastName": "Doe",
     "role": "Manager",
     "email": "jdoe@yahoo.com"
   },
   {
     "id": 2,
-    "name": "John Doe",
+    "firstName": "Johnathan",
+    "lastName": "Bravo",
     "role": "Manager",
-    "email": "johndoe@gmail.com"
+    "email": "johnb@gmail.com"
   },
   {
     "id": 3,
-    "name": "Karen Perkins",
+    "firstName": "Karen",
+    "lastName": "Perkins",
     "role": "Sales",
     "email": "kp@yahoo.com"
   },
   {
     "id": 4,
-    "name": "Hank Hill",
+    "firstName": "Hank",
+    "lastName": "Hill",
     "role": "Sales",
     "email": "hhill@hotmail.com"
   },
   {
     "id": 5,
-    "name": "Frasier Crane",
+    "firstName": "Fraiser",
+    "lastName": "Crane",
     "role": "Engineer",
     "email": "fcrane@gmail.com"
   },
   {
     "id": 6,
-    "name": "Rachel Carson",
+    "firstName": "Rachel",
+    "lastName": "Green",
     "role": "Engineer",
-    "email": "rcarson@yahoo.com"
+    "email": "rgreen@yahoo.com"
   },
   {
     "id": 7,
-    "name": "Peter Gibbons",
+    "firstName": "Peter",
+    "lastName": "Tosh",
     "role": "Analyst",
-    "email": "pgibb@hotmail.com"
+    "email": "ptosh@hotmail.com"
   },
   {
     "id": 8,
-    "name": "Lisa Simpson",
+    "firstName": "Lisa",
+    "lastName": "Simpson",
     "role": "Analyst",
     "email": "lisasimpson@gmail.com"
   }
