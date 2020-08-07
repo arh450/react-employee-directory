@@ -31,6 +31,16 @@ export default class Wrapper extends Component {
     this.setState({ data: Data });
   };
 
+  handleSortedNames = (event) => {
+    event.preventDefault();
+
+    const sortLastNames = this.state.data.sort((a, b) =>
+      a.lastName.localeCompare(b.lastName)
+    );
+
+    this.setState({ data: sortLastNames });
+  };
+
   render() {
     return (
       <main>
@@ -39,7 +49,10 @@ export default class Wrapper extends Component {
           handleFilterSubmit={this.handleFilterSubmit}
           handleFilterReset={this.handleFilterReset}
         />
-        <Table data={this.state.data} />
+        <Table
+          data={this.state.data}
+          handleSortedNames={this.handleSortedNames}
+        />
       </main>
     );
   }
