@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function TableBody(props) {
-  console.log(props.data);
+  // console.log(props.data);
   return (
     <tbody>
       {props.data.map((employee) => (

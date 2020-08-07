@@ -8,6 +8,16 @@ export default function Filter(props) {
   const filterIcon = <FontAwesomeIcon icon={faFilter} />;
   const undoIcon = <FontAwesomeIcon icon={faUndo} />;
 
+  // Map Data array to return roles of employees
+  const roles = Data.map((employee) => {
+    return employee.role;
+  });
+
+  // using Set constructor (creates a collection object that may occur only once) and spread operator to return an array containing each distinctive role
+  // How to remove duplicates from JS array https://stackoverflow.com/questions/9229645/remove-duplicate-values-from-js-array
+  const distinctRoles = [...new Set(roles)];
+  console.log(distinctRoles);
+
   return (
     <div className="input-group col-md-4 mt-5 mx-auto">
       <select
@@ -18,10 +28,11 @@ export default function Filter(props) {
         <option disabled selected>
           Select a role to filter by...
         </option>
-        <option value={Data[0].role}>{Data[0].role}</option>
-        <option value={Data[2].role}>{Data[2].role}</option>
-        <option value={Data[4].role}>{Data[4].role}</option>
-        <option value={Data[6].role}>{Data[6].role}</option>
+        {distinctRoles.map((role) => (
+          <option value={role} key={role}>
+            {role}
+          </option>
+        ))}
       </select>
       <div className="input-group-append">
         <button

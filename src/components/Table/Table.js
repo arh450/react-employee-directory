@@ -4,7 +4,7 @@ import TableHeaders from "./TableHeaders";
 import TableBody from "./TableBody";
 
 export default function Table(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <table className="table">
       <TableHeaders handleSortedNames={props.handleSortedNames} />
