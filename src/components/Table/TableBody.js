@@ -3,7 +3,7 @@ import React from "react";
 export default function TableBody(props) {
   // console.log(props.data);
   return (
-    <tbody>
+    <tbody className="tableBody">
       {props.data.map((employee) => (
         <tr key={employee.id}>
           <td>{employee.id}</td>
