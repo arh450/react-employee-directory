@@ -4,6 +4,8 @@ import Data from "./Data.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter, faUndo } from "@fortawesome/free-solid-svg-icons";
 
+import ReactTooltip from "react-tooltip";
+
 export default function Filter(props) {
   const filterIcon = <FontAwesomeIcon icon={faFilter} />;
   const undoIcon = <FontAwesomeIcon icon={faUndo} />;
@@ -37,18 +39,28 @@ export default function Filter(props) {
       <div className="input-group-append">
         <button
           type="button"
+          data-tip
+          data-for="filterTip"
           className="btn btn-info ml-1 mr-1"
           onClick={props.handleFilterSubmit}
         >
           {filterIcon}
         </button>
+        <ReactTooltip id="filterTip" place="top" effect="solid">
+          Filter
+        </ReactTooltip>
         <button
           type="button"
+          data-tip
+          data-for="resetTip"
           className="btn btn-danger"
           onClick={props.handleFilterReset}
         >
           {undoIcon}
         </button>
+        <ReactTooltip id="resetTip" place="top" effect="solid">
+          Reset
+        </ReactTooltip>
       </div>
     </div>
   );
